@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>自助打卡</title>
+  <style>
+    html,body{
+      margin: 0;
+      padding: 0;
+      background-color: #e9eeef;
+    }
+    .box{
+      width: 50%;
+      margin: 0 auto;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    input{
+      outline: 0;
+      border: 1px solid #e5e5e5;
+      border-radius: 4px;
+      padding: 10px 5px;
+    }
+    button{
+      outline: 0;
+      padding:8px 12px;
+      border: 0;
+      background-color: #7c945f;
+      border-radius: 4px;
+      color: #fff;
+      margin-top: 20px;
+    }
+    .log{
+      border-top: 2px dashed #7c945f;
+      width: 100vw;
+      height: 40vh;
+      display: flex;
+    }
+    #log-detail{
+      margin: 0;
+      width: 100%;
+      font-size: 14px;
+      padding: 10px;
+      color: #666;
+      word-break: break-word;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <input type="text" id="code" placeholder="请输入验证码...">
+    <button onclick="setVerifyCode()">发送验证码</button>
+    <button onclick="punchCard()">开 始 打 卡</button>
+  </div>
+  <div class="log">
+    <p id="log-detail">打卡错误信息会log在这里哦</p>
+  </div>
+</body>
+<script>
+  function setVerifyCode(){
+    fetch('/sendMsg').then(response=>{
+      response.text().then(res=>{
+        if(res==='发送成功'){
+          alert("发送短信成功~")
+        }else{
+          alert("发送短信失败：服务器有问题")
+        }
+      })
+    }).catch(err=>{
+      alert('发送短信失败:发请求出了点问题')
+      $log.innerText = typeof err === 'object'? JSON.stringify(err):err
+    })
+  }
+
+  let lock = false
+  function punchCard(){
+    if(lock){return}
+    lock = true
+    let $log = document.getElementById('log-detail')
+    let $code = document.getElementById('code')
+    let code= $code.value
+    fetch('/daka?code='+code,{method:'POST'})
+    .then((response)=> {
+      lock = false
+      response.text().then(res=>{
+        if(res!=='打卡失败'){
+          alert('打卡成功')
+          $log.innerText = res
+        }else{
+          alert('打卡失败，服务器有问题')
+          $log.innerText = res
+        }
+      }).catch(err=>{
+        alert('打卡失败:解析response失败')
+        $log.innerText = typeof err === 'object'? JSON.stringify(err):err
+      })
+    })
+    .catch((err) =>{
+      lock = false
+      alert('打卡失败:发请求出了点问题')
+      $log.innerText = typeof err === 'object'? JSON.stringify(err):err
+    });
+  }
+</script>
+</html>
