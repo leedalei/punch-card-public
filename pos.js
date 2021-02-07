@@ -1,10 +1,17 @@
 module.exports = POSITION_ARR = [
   {
     absPunchRecordTDTO: {
+<<<<<<< HEAD
       employeeId: "你的工号",
       encryptCode: "02",
       equipmentId: "你的设备id，抓包",
       equipmentIdData: "你的设备data，抓包",
+=======
+      employeeId: "80559585",
+      encryptCode: "02",
+      equipmentId: "867401041535511fec3c2ab0d199ac8",
+      equipmentIdData: "09c76800c3d55fcf6dcd06079d07aa7d",
+>>>>>>> e749eab94e93e44cac4139dce78e3bd7727387a5
       latitude: "cijh5nbzaQcRgYgGVCO0tA==",
       longitude: "Q0QzWnem3pBzRhyUTmG4jg==",
       punchAddress: "中国广东省广州市天河区五山路371-1号",
@@ -27,10 +34,17 @@ module.exports = POSITION_ARR = [
   },
   {
     absPunchRecordTDTO: {
+<<<<<<< HEAD
       employeeId: "你的工号",
       encryptCode: "02",
       equipmentId: "你的设备id，抓包",
       equipmentIdData: "你的设备data，抓包",
+=======
+      employeeId: "80559585",
+      encryptCode: "02",
+      equipmentId: "867401041535511fec3c2ab0d199ac8",
+      equipmentIdData: "09c76800c3d55fcf6dcd06079d07aa7d",
+>>>>>>> e749eab94e93e44cac4139dce78e3bd7727387a5
       latitude: "A+NbXKkyxP7Gtt+KmReViw==",
       longitude: "VarHj5gRlDOKahvSvdIYlA==",
       punchAddress: "中国广东省广州市天河区五山路371-1号",
@@ -53,10 +67,17 @@ module.exports = POSITION_ARR = [
   },
   {
     absPunchRecordTDTO: {
+<<<<<<< HEAD
       employeeId: "你的工号",
       encryptCode: "02",
       equipmentId: "你的设备id，抓包",
       equipmentIdData: "你的设备data，抓包",
+=======
+      employeeId: "80559585",
+      encryptCode: "02",
+      equipmentId: "867401041535511fec3c2ab0d199ac8",
+      equipmentIdData: "09c76800c3d55fcf6dcd06079d07aa7d",
+>>>>>>> e749eab94e93e44cac4139dce78e3bd7727387a5
       latitude: "PwF9e+OPDuT/MFuHk1ti5A==",
       longitude: "YZewmiqrmx7z6B3rvQCLtQ==",
       punchAddress: "中国广东省广州市天河区五山路371号",
@@ -79,10 +100,17 @@ module.exports = POSITION_ARR = [
   },
   {
     absPunchRecordTDTO: {
+<<<<<<< HEAD
       employeeId: "你的工号",
       encryptCode: "02",
       equipmentId: "你的设备id，抓包",
       equipmentIdData: "你的设备data，抓包",
+=======
+      employeeId: "80559585",
+      encryptCode: "02",
+      equipmentId: "867401041535511fec3c2ab0d199ac8",
+      equipmentIdData: "09c76800c3d55fcf6dcd06079d07aa7d",
+>>>>>>> e749eab94e93e44cac4139dce78e3bd7727387a5
       latitude: "NJkaucgmKBui5ZnA9sZpgA==",
       longitude: "niHmXvQ/3KxgsnWTmbUP1g==",
       punchAddress: "中国广东省广州市天河区科技新街28号114",
@@ -105,10 +133,17 @@ module.exports = POSITION_ARR = [
   },
   {
     absPunchRecordTDTO: {
+<<<<<<< HEAD
       employeeId: "你的工号",
       encryptCode: "02",
       equipmentId: "你的设备id，抓包",
       equipmentIdData: "你的设备data，抓包",
+=======
+      employeeId: "80559585",
+      encryptCode: "02",
+      equipmentId: "867401041535511fec3c2ab0d199ac8",
+      equipmentIdData: "09c76800c3d55fcf6dcd06079d07aa7d",
+>>>>>>> e749eab94e93e44cac4139dce78e3bd7727387a5
       latitude: "e7VaficDegBC3I/G9oPUKQ==",
       longitude: "gyETLPZqPmc3JyZMQcP89w==",
       punchAddress: "中国广东省广州市天河区科技新街28-114号",
@@ -131,10 +166,17 @@ module.exports = POSITION_ARR = [
   },
   {
     absPunchRecordTDTO: {
+<<<<<<< HEAD
       employeeId: "你的工号",
       encryptCode: "02",
       equipmentId: "你的设备id，抓包",
       equipmentIdData: "你的设备data，抓包",
+=======
+      employeeId: "80559585",
+      encryptCode: "02",
+      equipmentId: "867401041535511fec3c2ab0d199ac8",
+      equipmentIdData: "09c76800c3d55fcf6dcd06079d07aa7d",
+>>>>>>> e749eab94e93e44cac4139dce78e3bd7727387a5
       latitude: "4JYHXuVFQOZJDe/gf2qCQw==",
       longitude: "qApDW/wl1lxD5ljHFKEIWw==",
       punchAddress: "中国广东省广州市天河区五山路371号",
